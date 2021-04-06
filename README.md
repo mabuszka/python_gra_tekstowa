@@ -1,1 +1,1 @@
-python_prosta_gra_tekstowa
+python_gra_tekstowa

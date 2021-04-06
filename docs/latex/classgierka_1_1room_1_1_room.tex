@@ -1,0 +1,124 @@
+\hypertarget{classgierka_1_1room_1_1_room}{}\doxysection{gierka.\+room.\+Room Class Reference}
+\label{classgierka_1_1room_1_1_room}\index{gierka.room.Room@{gierka.room.Room}}
+
+
+class representing the room of the castle  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classgierka_1_1room_1_1_room_add3bdd6a383f94e0b99aa34dd728a15b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, id)
+\begin{DoxyCompactList}\small\item\em the constructor \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classgierka_1_1room_1_1_room_a1f1f751a4cf49ead25f1e4b479429dc3}{add\+\_\+door}} (self, nb\+\_\+id, door)
+\begin{DoxyCompactList}\small\item\em method for adding the door between this room and another one \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgierka_1_1room_1_1_room_aaf21dcc34dd4771dcbc88d86d3277e2a}\label{classgierka_1_1room_1_1_room_aaf21dcc34dd4771dcbc88d86d3277e2a}} 
+def \mbox{\hyperlink{classgierka_1_1room_1_1_room_aaf21dcc34dd4771dcbc88d86d3277e2a}{get\+\_\+id}} (self)
+\begin{DoxyCompactList}\small\item\em method to get the id of the room \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgierka_1_1room_1_1_room_a81dc641691465aa057c8981bf6a86d38}\label{classgierka_1_1room_1_1_room_a81dc641691465aa057c8981bf6a86d38}} 
+def \mbox{\hyperlink{classgierka_1_1room_1_1_room_a81dc641691465aa057c8981bf6a86d38}{hero\+\_\+present}} (self)
+\begin{DoxyCompactList}\small\item\em method to know whether the hero is in this room \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgierka_1_1room_1_1_room_a4e04fc5d2f652007f83c6a1cbdd997f4}\label{classgierka_1_1room_1_1_room_a4e04fc5d2f652007f83c6a1cbdd997f4}} 
+def \mbox{\hyperlink{classgierka_1_1room_1_1_room_a4e04fc5d2f652007f83c6a1cbdd997f4}{get\+\_\+neighbours\+\_\+ids}} (self)
+\begin{DoxyCompactList}\small\item\em method to get the ids of the rooms neighbours \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classgierka_1_1room_1_1_room_a6f09409f3c13a23eee225a4c075e43a8}{get\+\_\+door\+\_\+to\+\_\+room}} (self, room\+\_\+id)
+\begin{DoxyCompactList}\small\item\em method to get the door leading from this room to another \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classgierka_1_1room_1_1_room_ac4d32848290e48217a90d043cce3c256}{add\+\_\+item\+\_\+to\+\_\+chest}} (self, item)
+\begin{DoxyCompactList}\small\item\em method to ad an item to the chest of this room \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgierka_1_1room_1_1_room_a84362af37be4672808f543afa9990cf5}\label{classgierka_1_1room_1_1_room_a84362af37be4672808f543afa9990cf5}} 
+{\bfseries hero\+\_\+in\+\_\+room}
+\item 
+\mbox{\Hypertarget{classgierka_1_1room_1_1_room_a7f1b66efe0caa979ef90b0bc6933f937}\label{classgierka_1_1room_1_1_room_a7f1b66efe0caa979ef90b0bc6933f937}} 
+{\bfseries id}
+\item 
+\mbox{\Hypertarget{classgierka_1_1room_1_1_room_abfd464781ee72ea52a0061b22752e1e5}\label{classgierka_1_1room_1_1_room_abfd464781ee72ea52a0061b22752e1e5}} 
+{\bfseries neighbours}
+\item 
+\mbox{\Hypertarget{classgierka_1_1room_1_1_room_aeac4193b3cec38ab07a45177ae461b93}\label{classgierka_1_1room_1_1_room_aeac4193b3cec38ab07a45177ae461b93}} 
+{\bfseries chest}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class representing the room of the castle 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgierka_1_1room_1_1_room_add3bdd6a383f94e0b99aa34dd728a15b}\label{classgierka_1_1room_1_1_room_add3bdd6a383f94e0b99aa34dd728a15b}} 
+\index{gierka.room.Room@{gierka.room.Room}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!gierka.room.Room@{gierka.room.Room}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def gierka.\+room.\+Room.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id }\end{DoxyParamCaption})}
+
+
+
+the constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hero\+\_\+in\+\_\+room} & indcates whether the hero is in ths room \\
+\hline
+{\em id} & the id of the room \\
+\hline
+{\em neighbours} & holds the ids of the room neghbouring rooms an the door that lead between them \\
+\hline
+{\em chest} & can be either empty or contain an item \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgierka_1_1room_1_1_room_a1f1f751a4cf49ead25f1e4b479429dc3}\label{classgierka_1_1room_1_1_room_a1f1f751a4cf49ead25f1e4b479429dc3}} 
+\index{gierka.room.Room@{gierka.room.Room}!add\_door@{add\_door}}
+\index{add\_door@{add\_door}!gierka.room.Room@{gierka.room.Room}}
+\doxysubsubsection{\texorpdfstring{add\_door()}{add\_door()}}
+{\footnotesize\ttfamily def gierka.\+room.\+Room.\+add\+\_\+door (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nb\+\_\+id,  }\item[{}]{door }\end{DoxyParamCaption})}
+
+
+
+method for adding the door between this room and another one 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+\_\+id} & the id of the room we want to add the door to \\
+\hline
+{\em door} & the Door object representing the door between the rooms \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgierka_1_1room_1_1_room_ac4d32848290e48217a90d043cce3c256}\label{classgierka_1_1room_1_1_room_ac4d32848290e48217a90d043cce3c256}} 
+\index{gierka.room.Room@{gierka.room.Room}!add\_item\_to\_chest@{add\_item\_to\_chest}}
+\index{add\_item\_to\_chest@{add\_item\_to\_chest}!gierka.room.Room@{gierka.room.Room}}
+\doxysubsubsection{\texorpdfstring{add\_item\_to\_chest()}{add\_item\_to\_chest()}}
+{\footnotesize\ttfamily def gierka.\+room.\+Room.\+add\+\_\+item\+\_\+to\+\_\+chest (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{item }\end{DoxyParamCaption})}
+
+
+
+method to ad an item to the chest of this room 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & item to add to the chest \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgierka_1_1room_1_1_room_a6f09409f3c13a23eee225a4c075e43a8}\label{classgierka_1_1room_1_1_room_a6f09409f3c13a23eee225a4c075e43a8}} 
+\index{gierka.room.Room@{gierka.room.Room}!get\_door\_to\_room@{get\_door\_to\_room}}
+\index{get\_door\_to\_room@{get\_door\_to\_room}!gierka.room.Room@{gierka.room.Room}}
+\doxysubsubsection{\texorpdfstring{get\_door\_to\_room()}{get\_door\_to\_room()}}
+{\footnotesize\ttfamily def gierka.\+room.\+Room.\+get\+\_\+door\+\_\+to\+\_\+room (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{room\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+method to get the door leading from this room to another 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+\_\+id} & the id of the other room \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Magda/\+Pycharm\+Projects/pythonlab2/gierka/room.\+py\end{DoxyCompactItemize}

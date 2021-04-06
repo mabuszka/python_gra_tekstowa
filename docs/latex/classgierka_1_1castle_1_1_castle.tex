@@ -1,0 +1,228 @@
+\hypertarget{classgierka_1_1castle_1_1_castle}{}\doxysection{gierka.\+castle.\+Castle Class Reference}
+\label{classgierka_1_1castle_1_1_castle}\index{gierka.castle.Castle@{gierka.castle.Castle}}
+
+
+class representing the castle in which the hero is having his adventure  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classgierka_1_1castle_1_1_castle_aee03e8a186a7ca4aa6a0993052e620a5}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\begin{DoxyCompactList}\small\item\em the constructor \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classgierka_1_1castle_1_1_castle_a3c5c9794779a14c1e456cef68e334bd1}{add\+\_\+room}} (self, room\+\_\+id)
+\begin{DoxyCompactList}\small\item\em method to add a new room to the castle creates a Room object with given room\+\_\+id \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classgierka_1_1castle_1_1_castle_a39c7ab68b0f61c1dcd46f16753b77ebe}{add\+\_\+door\+\_\+between\+\_\+rooms}} (self, room1\+\_\+id, room2\+\_\+id, door=None)
+\begin{DoxyCompactList}\small\item\em method to add a door between two rooms Ads a door between to rooms given their ids \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classgierka_1_1castle_1_1_castle_a9e904d74101655d979f63f7ac72e6801}{get\+\_\+room}} (self, room\+\_\+id)
+\begin{DoxyCompactList}\small\item\em method to get a Room object given the room\textquotesingle{}s id \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classgierka_1_1castle_1_1_castle_a22421bf87a93f53dde877a0700ce9fbc}{spawn\+\_\+monster\+\_\+in\+\_\+room}} (self, room\+\_\+id, monster\+\_\+type=\char`\"{}monster\char`\"{}, monster\+\_\+health=80)
+\begin{DoxyCompactList}\small\item\em method to spawn a moster in given room \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classgierka_1_1castle_1_1_castle_a2f754d40da152996f91931bfc63f0e5e}{get\+\_\+new\+\_\+monster\+\_\+id}} (self)
+\begin{DoxyCompactList}\small\item\em method to get an id for new monster. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classgierka_1_1castle_1_1_castle_a5ef3d6436b8fa47ceec63763873b390b}{kill\+\_\+monster}} (self, monster\+\_\+id)
+\begin{DoxyCompactList}\small\item\em the method to delete mosters method used to delete the monster that the user killed in the battle \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classgierka_1_1castle_1_1_castle_a1c310831dcd9c628814573df9d83e4cd}{move\+\_\+monster}} (self, monster\+\_\+id)
+\begin{DoxyCompactList}\small\item\em method to move the monster around the castle uses \+\_\+move\+\_\+monster function, chooses the destination from all of the possible ones at random \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classgierka_1_1castle_1_1_castle_a7c3a2eb68a21d21b766d06373d91add8}{get\+\_\+monster\+\_\+possible\+\_\+moves}} (self, monster\+\_\+id)
+\begin{DoxyCompactList}\small\item\em method to return the possible moves of given monster \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classgierka_1_1castle_1_1_castle_adee81f3f40929807bec27a7e0f4f6b23}{make\+\_\+door}} (room1\+\_\+id, room2\+\_\+id, colour, locked)
+\begin{DoxyCompactList}\small\item\em static method to make a Door object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgierka_1_1castle_1_1_castle_a9eb6c6fc23f67d44df693fe7b97fcb36}\label{classgierka_1_1castle_1_1_castle_a9eb6c6fc23f67d44df693fe7b97fcb36}} 
+def \mbox{\hyperlink{classgierka_1_1castle_1_1_castle_a9eb6c6fc23f67d44df693fe7b97fcb36}{random\+\_\+colour}} ()
+\begin{DoxyCompactList}\small\item\em static method to choose a random colour for the doors \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgierka_1_1castle_1_1_castle_a52358c9ad20c888728f594ceb0ddf8f1}\label{classgierka_1_1castle_1_1_castle_a52358c9ad20c888728f594ceb0ddf8f1}} 
+def \mbox{\hyperlink{classgierka_1_1castle_1_1_castle_a52358c9ad20c888728f594ceb0ddf8f1}{random\+\_\+lock}} ()
+\begin{DoxyCompactList}\small\item\em static method to choose at random whether the door should be locke or not \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgierka_1_1castle_1_1_castle_a5a58f710175b4b1a63af622082051854}\label{classgierka_1_1castle_1_1_castle_a5a58f710175b4b1a63af622082051854}} 
+{\bfseries rooms}
+\item 
+\mbox{\Hypertarget{classgierka_1_1castle_1_1_castle_a90250db4676a20d29e6acd89db726a01}\label{classgierka_1_1castle_1_1_castle_a90250db4676a20d29e6acd89db726a01}} 
+{\bfseries monsters}
+\item 
+\mbox{\Hypertarget{classgierka_1_1castle_1_1_castle_ab01d20d244a45e8b0357659646024fd9}\label{classgierka_1_1castle_1_1_castle_ab01d20d244a45e8b0357659646024fd9}} 
+{\bfseries monsters\+\_\+positions}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class representing the castle in which the hero is having his adventure 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgierka_1_1castle_1_1_castle_aee03e8a186a7ca4aa6a0993052e620a5}\label{classgierka_1_1castle_1_1_castle_aee03e8a186a7ca4aa6a0993052e620a5}} 
+\index{gierka.castle.Castle@{gierka.castle.Castle}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!gierka.castle.Castle@{gierka.castle.Castle}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def gierka.\+castle.\+Castle.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+the constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rooms} & holds the pairs room\+\_\+id (the id of the room)\+: Room (an object of class Room) \\
+\hline
+{\em monsters} & holds the pairs monster\+\_\+id (the id of the monster)\+: Monster (an object of class Monster) \\
+\hline
+{\em monsters\+\_\+positions} & holds the pairs position (id of the room) \+: list of monsters (a list containing the ids of the monsters that are in this room) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgierka_1_1castle_1_1_castle_a39c7ab68b0f61c1dcd46f16753b77ebe}\label{classgierka_1_1castle_1_1_castle_a39c7ab68b0f61c1dcd46f16753b77ebe}} 
+\index{gierka.castle.Castle@{gierka.castle.Castle}!add\_door\_between\_rooms@{add\_door\_between\_rooms}}
+\index{add\_door\_between\_rooms@{add\_door\_between\_rooms}!gierka.castle.Castle@{gierka.castle.Castle}}
+\doxysubsubsection{\texorpdfstring{add\_door\_between\_rooms()}{add\_door\_between\_rooms()}}
+{\footnotesize\ttfamily def gierka.\+castle.\+Castle.\+add\+\_\+door\+\_\+between\+\_\+rooms (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{room1\+\_\+id,  }\item[{}]{room2\+\_\+id,  }\item[{}]{door = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+method to add a door between two rooms Ads a door between to rooms given their ids 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room1\+\_\+id} & id of the first room \\
+\hline
+{\em room2\+\_\+id} & id of the second room \\
+\hline
+{\em door} & either None (default) in which case a new Door object will be created, or a Door object to be used \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgierka_1_1castle_1_1_castle_a3c5c9794779a14c1e456cef68e334bd1}\label{classgierka_1_1castle_1_1_castle_a3c5c9794779a14c1e456cef68e334bd1}} 
+\index{gierka.castle.Castle@{gierka.castle.Castle}!add\_room@{add\_room}}
+\index{add\_room@{add\_room}!gierka.castle.Castle@{gierka.castle.Castle}}
+\doxysubsubsection{\texorpdfstring{add\_room()}{add\_room()}}
+{\footnotesize\ttfamily def gierka.\+castle.\+Castle.\+add\+\_\+room (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{room\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+method to add a new room to the castle creates a Room object with given room\+\_\+id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+\_\+id} & the id which will be given to the new room \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgierka_1_1castle_1_1_castle_a7c3a2eb68a21d21b766d06373d91add8}\label{classgierka_1_1castle_1_1_castle_a7c3a2eb68a21d21b766d06373d91add8}} 
+\index{gierka.castle.Castle@{gierka.castle.Castle}!get\_monster\_possible\_moves@{get\_monster\_possible\_moves}}
+\index{get\_monster\_possible\_moves@{get\_monster\_possible\_moves}!gierka.castle.Castle@{gierka.castle.Castle}}
+\doxysubsubsection{\texorpdfstring{get\_monster\_possible\_moves()}{get\_monster\_possible\_moves()}}
+{\footnotesize\ttfamily def gierka.\+castle.\+Castle.\+get\+\_\+monster\+\_\+possible\+\_\+moves (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{monster\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+method to return the possible moves of given monster 
+
+
+\begin{DoxyParams}{Parameters}
+{\em monster\+\_\+id} & the id of the monster that we want to know the possible moves of \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgierka_1_1castle_1_1_castle_a2f754d40da152996f91931bfc63f0e5e}\label{classgierka_1_1castle_1_1_castle_a2f754d40da152996f91931bfc63f0e5e}} 
+\index{gierka.castle.Castle@{gierka.castle.Castle}!get\_new\_monster\_id@{get\_new\_monster\_id}}
+\index{get\_new\_monster\_id@{get\_new\_monster\_id}!gierka.castle.Castle@{gierka.castle.Castle}}
+\doxysubsubsection{\texorpdfstring{get\_new\_monster\_id()}{get\_new\_monster\_id()}}
+{\footnotesize\ttfamily def gierka.\+castle.\+Castle.\+get\+\_\+new\+\_\+monster\+\_\+id (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+method to get an id for new monster. 
+
+The method guarantees the the ids of the monsters will be unique \mbox{\Hypertarget{classgierka_1_1castle_1_1_castle_a9e904d74101655d979f63f7ac72e6801}\label{classgierka_1_1castle_1_1_castle_a9e904d74101655d979f63f7ac72e6801}} 
+\index{gierka.castle.Castle@{gierka.castle.Castle}!get\_room@{get\_room}}
+\index{get\_room@{get\_room}!gierka.castle.Castle@{gierka.castle.Castle}}
+\doxysubsubsection{\texorpdfstring{get\_room()}{get\_room()}}
+{\footnotesize\ttfamily def gierka.\+castle.\+Castle.\+get\+\_\+room (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{room\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+method to get a Room object given the room\textquotesingle{}s id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+\_\+id} & the id of the room \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgierka_1_1castle_1_1_castle_a5ef3d6436b8fa47ceec63763873b390b}\label{classgierka_1_1castle_1_1_castle_a5ef3d6436b8fa47ceec63763873b390b}} 
+\index{gierka.castle.Castle@{gierka.castle.Castle}!kill\_monster@{kill\_monster}}
+\index{kill\_monster@{kill\_monster}!gierka.castle.Castle@{gierka.castle.Castle}}
+\doxysubsubsection{\texorpdfstring{kill\_monster()}{kill\_monster()}}
+{\footnotesize\ttfamily def gierka.\+castle.\+Castle.\+kill\+\_\+monster (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{monster\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+the method to delete mosters method used to delete the monster that the user killed in the battle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em monster\+\_\+id} & the id of the monster that will be deleted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgierka_1_1castle_1_1_castle_adee81f3f40929807bec27a7e0f4f6b23}\label{classgierka_1_1castle_1_1_castle_adee81f3f40929807bec27a7e0f4f6b23}} 
+\index{gierka.castle.Castle@{gierka.castle.Castle}!make\_door@{make\_door}}
+\index{make\_door@{make\_door}!gierka.castle.Castle@{gierka.castle.Castle}}
+\doxysubsubsection{\texorpdfstring{make\_door()}{make\_door()}}
+{\footnotesize\ttfamily def gierka.\+castle.\+Castle.\+make\+\_\+door (\begin{DoxyParamCaption}\item[{}]{room1\+\_\+id,  }\item[{}]{room2\+\_\+id,  }\item[{}]{colour,  }\item[{}]{locked }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+static method to make a Door object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room1\+\_\+id} & id of the first room \\
+\hline
+{\em room2\+\_\+id} & id of the second room \\
+\hline
+{\em colour} & the colour of the door \\
+\hline
+{\em locked} & indicates whether the door should be locked or not \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgierka_1_1castle_1_1_castle_a1c310831dcd9c628814573df9d83e4cd}\label{classgierka_1_1castle_1_1_castle_a1c310831dcd9c628814573df9d83e4cd}} 
+\index{gierka.castle.Castle@{gierka.castle.Castle}!move\_monster@{move\_monster}}
+\index{move\_monster@{move\_monster}!gierka.castle.Castle@{gierka.castle.Castle}}
+\doxysubsubsection{\texorpdfstring{move\_monster()}{move\_monster()}}
+{\footnotesize\ttfamily def gierka.\+castle.\+Castle.\+move\+\_\+monster (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{monster\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+method to move the monster around the castle uses \+\_\+move\+\_\+monster function, chooses the destination from all of the possible ones at random 
+
+
+\begin{DoxyParams}{Parameters}
+{\em monster\+\_\+id} & the id of the monster that should be moved \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgierka_1_1castle_1_1_castle_a22421bf87a93f53dde877a0700ce9fbc}\label{classgierka_1_1castle_1_1_castle_a22421bf87a93f53dde877a0700ce9fbc}} 
+\index{gierka.castle.Castle@{gierka.castle.Castle}!spawn\_monster\_in\_room@{spawn\_monster\_in\_room}}
+\index{spawn\_monster\_in\_room@{spawn\_monster\_in\_room}!gierka.castle.Castle@{gierka.castle.Castle}}
+\doxysubsubsection{\texorpdfstring{spawn\_monster\_in\_room()}{spawn\_monster\_in\_room()}}
+{\footnotesize\ttfamily def gierka.\+castle.\+Castle.\+spawn\+\_\+monster\+\_\+in\+\_\+room (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{room\+\_\+id,  }\item[{}]{monster\+\_\+type = {\ttfamily \char`\"{}monster\char`\"{}},  }\item[{}]{monster\+\_\+health = {\ttfamily 80} }\end{DoxyParamCaption})}
+
+
+
+method to spawn a moster in given room 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+\_\+id} & the id of the room in which the monster will be spawned \\
+\hline
+{\em monster\+\_\+type} & the type of the monster that will be spawned, the default value is \char`\"{}monster\char`\"{} \\
+\hline
+{\em monster\+\_\+health} & the health of the spawned monster, indicates how many health points will it have \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Magda/\+Pycharm\+Projects/pythonlab2/gierka/castle.\+py\end{DoxyCompactItemize}
