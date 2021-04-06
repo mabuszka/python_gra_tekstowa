@@ -1,0 +1,1 @@
+python_prosta_gra_tekstowa
